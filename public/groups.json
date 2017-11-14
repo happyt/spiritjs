@@ -1,0 +1,132 @@
+{
+    "version_app": "0.11.9",
+    "version_extension": "1.2.8",
+    "version_runtime": "2.0.5",
+    "groups": [
+        {
+            "name": "flyOn",
+            "timeScale": 1,
+            "timelines": [
+                {
+                    "type": "dom",
+                    "props": {
+                        "x": {
+                            "0s": "-102",
+                            "0.5328185328185329s": {
+                                "value": "249",
+                                "ease": "Power2.easeInOut"
+                            },
+                            "0.7612184753142199s": {
+                                "value": "0",
+                                "ease": "Power2.easeOut"
+                            }
+                        }
+                    },
+                    "label": "#flash",
+                    "path": "div[1]",
+                    "id": "flash"
+                },
+                {
+                    "type": "dom",
+                    "props": {
+                        "x": {
+                            "0s": "-350",
+                            "0.7586872586872587s": {
+                                "value": "0",
+                                "ease": "Power2.easeOut"
+                            }
+                        }
+                    },
+                    "label": "#bgUpper",
+                    "path": "div[2]",
+                    "id": "bgUpper"
+                },
+                {
+                    "type": "dom",
+                    "props": {
+                        "opacity": {
+                            "0s": "0",
+                            "0.5463320463320464s": "0",
+                            "0.7586872586872587s": "1"
+                        }
+                    },
+                    "label": "#nameid",
+                    "path": "div[2]/div[1]",
+                    "id": "nameid"
+                },
+                {
+                    "type": "dom",
+                    "props": {
+                        "x": {
+                            "0s": "-350",
+                            "0.8996138996138996s": {
+                                "value": "0",
+                                "ease": "Power2.easeOut"
+                            }
+                        }
+                    },
+                    "label": "#bgLower",
+                    "path": "div[3]",
+                    "id": "bgLower"
+                },
+                {
+                    "type": "dom",
+                    "props": {
+                        "opacity": {
+                            "0s": "0",
+                            "0.7084942084942085s": "0",
+                            "0.8996138996138996s": "1"
+                        }
+                    },
+                    "label": "#titleid",
+                    "path": "div[3]/div[1]",
+                    "id": "titleid"
+                }
+            ]
+        },
+        {
+            "name": "flyOff",
+            "timeScale": 1,
+            "timelines": [
+                {
+                    "type": "dom",
+                    "props": {
+                        "opacity": {
+                            "0.49867021276595747s": "0"
+                        }
+                    },
+                    "label": "#bgUpper",
+                    "path": "div[2]",
+                    "id": "bgUpper"
+                },
+                {
+                    "type": "dom",
+                    "props": {
+                        "opacity": {
+                            "0s": "1",
+                            "0.49867021276595747s": "0"
+                        }
+                    },
+                    "label": "#bgLower",
+                    "path": "div[3]",
+                    "id": "bgLower"
+                },
+                {
+                    "type": "dom",
+                    "props": {
+                        "opacity": {
+                            "0s": "1",
+                            "0.49867021276595747s": "0"
+                        },
+                        "x": {
+                            "0.49867021276595747s": "202px"
+                        }
+                    },
+                    "label": "#flash",
+                    "path": "div[1]",
+                    "id": "flash"
+                }
+            ]
+        }
+    ]
+}

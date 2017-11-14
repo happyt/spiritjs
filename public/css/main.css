@@ -1,0 +1,76 @@
+html, body {
+	Width:1920px;  										/* Set to your channel's resolution */
+	Height:1080px;										/* Set to your channel's resolution */
+	Margin:0;												  /* Use all available space */
+	Padding:0;												/* Use all available space */
+	Background:transparent;						/* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
+	Overflow:hidden;									/* Hide any overflowing elements - to disable scollbars */
+	-webkit-font-smoothing:antialiased !important;	 		/* Set aliasing of fonts - possible options: none, antialiased,  subpixel-antialiased */
+}
+@font-face {
+	font-family: Roboto-Black;
+	src: url('../fonts/Roboto-Black.ttf');
+}
+@font-face {
+	font-family: Roboto-Regular;
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+.upper_flash{
+  width: 10px;
+  top: 125px;
+  left: 90px;
+  height: 50px;
+  display:inline-block;
+  position:relative;
+  background-color:#f55;
+  z-index: 20;
+}
+.upper_box {
+  width: 250px;
+  top: 125px;
+  left: 100px;
+  height: 50px;
+  display:inline-block;
+  position:fixed;
+  background: linear-gradient(to bottom, #159 0%,#17c 50%,#17c 51%,#7be 100%); 
+  overflow: hidden;
+  z-index: 10;
+}
+.lower_box {
+  width: auto;
+  top: 175px;
+  left: 100px;
+  width: 250px;
+  height: 40px;
+  position: absolute;
+  background: linear-gradient(to bottom, #048 0%,#05a 50%,#05a 51%,#6ad 100%);
+  overflow: hidden;
+  z-index: 5;
+}
+.name{
+  width: auto;
+  white-space: nowrap;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-family: Roboto-Black;
+  font-size: 40px;
+  color: #fff;
+  z-index: 1;
+}
+.title{
+  width: auto;
+  white-space: nowrap;
+  position: absolute;
+  left: 12px;
+  top: 2px;
+  font-family: Roboto-Regular;
+  font-size: 30px;
+  color: #fff;
+  z-index: 8;
+}
+.buttons {
+  position:absolute;
+  top:0px;
+  left:0px;
+}

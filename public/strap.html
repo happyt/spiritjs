@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://unpkg.com/spiritjs/dist/spirit.js"></script>
+</head>
+
+<body>
+    <div class="upper_flash" data-spirit-id="flash"></div>
+    <div class="upper_box" data-spirit-id="bgUpper">
+        <div class="name" data-spirit-id="nameid">Jim Smith</div>
+    </div>
+    <div class="lower_box" data-spirit-id="bgLower">
+        <div class="title" data-spirit-id="titleid">Chairman</div>
+    </div>
+    <div class="buttons">
+        <button type="button" onclick="flyOn()">FLY ON</button>
+        <button type="button" onclick="flyOff()">FLY OFF</button>
+    </div>
+   <script>
+        spirit.setup();
+        var animation;
+        spirit.load('groups.json').then(groups => { // load animation data
+            animation = groups;
+        })
+        
+        function flyOn() {
+            animation.get('flyOn').construct().play() // construct group and play it
+        }        
+        
+        function flyOff() {
+            animation.get('flyOff').construct().play() // construct group and play it
+        }
+    </script>
+</body>
+
+</html>
